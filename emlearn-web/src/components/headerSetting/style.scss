@@ -1,0 +1,76 @@
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.block-pointer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90px;
+    & .icon-image:nth-child(1){
+        width:17px;
+        height:17px;
+    }
+    & .icon-image:nth-child(2){
+        width:18px;
+        height:16px;
+    }
+    & .icon-image:nth-child(3){
+        width:14px;
+        height:14px;
+    }
+    & :hover{
+        cursor: pointer;
+    }
+}
+
+.settingOverlay{
+    margin: 20px 0;
+    & .text-title{
+        color:#757575;
+        font-size:12px;
+    }
+    & .setting-icon-style{
+        margin:15px 0;
+        display:flex;
+        align-items: center;
+    }
+}
+.block {
+    width: 320px;
+    //height: 320px;
+    padding:20px;
+    background-color: #fff;
+}
+.dialog-container{
+    padding: 20px;
+    text-align:center;
+    color:#000;
+}
+.van-button__text{
+    font-size: 17px;
+    font-family: PingFang-SC-Medium, PingFang-SC;
+    font-weight: 500;
+}
+.confer-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    //background-color: #000;
+    & .confer-block{
+        width: 320px;
+        //height: 320px;
+        padding:20px;
+        background-color: #000;
+        color: #fff;
+    }
+}
+// 鼠标指向音量条显示小手效果
+.pointer-volume:hover{
+    cursor: pointer;
+}

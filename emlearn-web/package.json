@@ -1,0 +1,69 @@
+{
+  "name": "",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "@vant/touch-emulator": "^1.2.0",
+    "axios": "^0.20.0",
+    "babel-polyfill": "^6.26.0",
+    "core-js": "^1.1.2",
+    "easemob-emedia": "^3.2.2",
+    "easemob-websdk": "^3.3.0",
+    "easemob-whiteboards": "^1.0.4",
+    "element-ui": "^2.13.2",
+    "http-server": "^0.12.3",
+    "jquery": "^3.5.1",
+    "recordrtc": "^5.6.1",
+    "uglifyjs-webpack-plugin": "^1.1.1",
+    "vant": "^2.10.9",
+    "vue": "^2.6.11",
+    "vue-draggable-resizable": "^2.2.0",
+    "vue-material": "^1.0.0-beta-15",
+    "vue-router": "^3.4.3",
+    "vuedraggable": "^2.24.2",
+    "vuelidate": "^0.7.5",
+    "vuex": "^3.5.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.12.1",
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-component": "^1.1.1",
+    "babel-plugin-import": "^1.13.1",
+    "compression-webpack-plugin": "^6.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.2.2",
+    "image-webpack-loader": "^7.0.1",
+    "moment": "^2.29.0",
+    "node-sass": "^4.14.1",
+    "nprogress": "^0.2.0",
+    "sass-loader": "^10.0.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

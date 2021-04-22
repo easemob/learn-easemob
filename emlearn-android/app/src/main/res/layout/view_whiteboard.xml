@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_weight="0.8"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_gravity="bottom">
+    <com.t.emlearn.ui.view.MemberView
+        android:id="@+id/shareDesktop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        android:background="@color/btn_gray_normal"
+        android:scrollbars="none">
+
+    </com.t.emlearn.ui.view.MemberView>
+
+    <com.t.emlearn.utils.X5WebView
+            android:id="@+id/whiteboard_webview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+
+    <LinearLayout
+            android:id="@+id/white_but_group"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/white_group_shape"
+            android:orientation="horizontal"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:padding="10dp">
+
+        <ImageView
+                android:id="@+id/white_but"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:src="@drawable/white_but_on" />
+
+        <ImageView
+                android:id="@+id/share_but"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:src="@drawable/white_share_off" />
+    </LinearLayout>
+
+</RelativeLayout>

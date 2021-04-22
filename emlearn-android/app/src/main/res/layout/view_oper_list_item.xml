@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="#e0e0e0"
+    android:gravity="center_vertical"
+    >
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="0dp"
+        android:layout_weight="0.3"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="2dp"
+        android:textColor="@color/black" />
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_whiteborad"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/oper_white_on"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_audio"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/oper_audio_on"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="0.2"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/img_video"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/oper_video_on"
+            android:layout_centerVertical="true"
+            android:scaleType="centerInside"/>
+    </RelativeLayout>
+
+</LinearLayout>

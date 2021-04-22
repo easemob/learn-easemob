@@ -1,0 +1,12 @@
+platform :ios, '9.0'
+source 'https://github.com/CocoaPods/Specs.git'
+
+target 'emlearn-ios' do
+    pod 'Masonry'
+    pod 'Hyphenate','3.7.3'
+    pod 'MJRefresh'
+    pod 'SDWebImage', '~> 4.0'
+    pod 'SDWebImage/GIF'
+    pod 'FLAnimatedImage', '~> 1.0'
+end
+

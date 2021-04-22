@@ -1,0 +1,65 @@
+.login {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  & .form {
+    
+}
+}
+
+.footer_text{
+margin-top: 35px;
+height: 22px;
+font-size: 16px;
+font-family: PingFang-SC-Regular, PingFang-SC;
+font-weight: 400;
+color: #fff;
+text-align: center;
+line-height: 22px;
+}
+
+/deep/ .el-select-dropdown__list {
+padding:0; 
+}
+/deep/ .el-select-dropdown__item.selected {
+color: #847DE9;
+background:#EDEDFE;
+font-size: 14px;
+font-family: PingFangSC-Regular, PingFang SC;
+font-weight: 400;
+}
+/deep/ .el-radio__input.is-checked .el-radio__inner {
+// border-color: #837AD1;
+background: #8C83E0;
+}
+/deep/ .el-radio__input.is-checked+.el-radio__label {
+color: #837AD1;
+}
+
+/deep/ .el-input__inner:focus{  // 选中输入框颜色
+border: 2px solid #8079E9;
+}
+/deep/ .el-select .el-input__inner:focus { //选中下拉框颜色
+border: 2px solid #8079E9 !important;
+}
+/deep/ .el-form--label-top .el-form-item__label {
+// padding: 0 !important;
+width: 118px;
+height: 21px;
+font-size: 14px;
+font-family: PingFang-SC-Regular, PingFang-SC;
+font-weight: 400;
+color: #A5A3A4;
+line-height: 20px;
+}

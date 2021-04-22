@@ -1,0 +1,105 @@
+//学生列表窗口样式 
+.stu-window-style{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    // height:100%;
+    position: absolute;
+    & .stu-container{
+        // width: 400px;
+        // background-color:#F5F5F9;
+        // color: #000;
+        // border-radius: 10px;
+        width: 18rem;
+        z-index: 1;
+        background: rgb(255, 255, 255);
+        & .stu-container-header{
+            // padding: 10px;
+            // text-align:right;
+            padding: 0 15px;
+            height: 38px;
+            font-size: 0.85rem;
+            color:#72788D;
+            background:#C6CAD6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;  
+            & .stu-container-header-title{
+                width: 89px;
+                height: 12px;
+                font-size: 12px;
+                font-family: PingFang-SC-Medium, PingFang-SC;
+                font-weight: 500;
+                color: #616C8F;
+                line-height: 12px;
+            }
+            & .stu-container-header-icon{
+                width:16px;
+                height:16px;
+            }
+            & .close-icon:hover{
+                cursor: pointer;
+            }
+        }
+        & .stu-container-panel{
+            border-bottom:1px solid #D7D7D7;
+            & .stu-container-panel-info{
+                height: 310px;
+                background: rgba(205,205,205,0.2);
+                overflow:auto;
+                & .stulist-title{
+                    height: 37px;
+                    display:flex;
+                    align-items:center;
+                    justify-content:space-around;
+                    margin-bottom:5px;
+                    text-align:center;
+                    border-bottom:1px solid #F7F7F9;
+                 
+                }
+                & .stulist-title-name{
+                    width: 30%;
+                    height: 12px;
+                    font-size: 12px;
+                    font-family: PingFang-SC-Regular, PingFang-SC;
+                    font-weight: 400;
+                    color: #616C8F;
+                    line-height: 12px;
+                }
+                & .stulist-panel{
+                    height:37px;
+                    font-size:12px;
+                    display:flex;
+                    align-items:center;
+                    justify-content:space-around;
+                    margin-bottom:5px;
+                    text-align:center;
+                    border-bottom:1px solid #F7F7F9;
+                }
+            }
+        }
+    }
+}
+
+.block-pointer-white{
+    width: 16px;
+    height: 16px;
+    
+    cursor: pointer;
+}
+.block-pointer-message{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+.block-pointer-audio{
+    width: 16px;
+    height: 20px;
+    cursor: pointer;
+}
+.block-pointer-video{
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+   

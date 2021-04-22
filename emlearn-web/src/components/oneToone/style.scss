@@ -1,0 +1,321 @@
+@media screen and (max-height: 768px) and (max-width: 1366px){
+    header,main {
+        min-width: 990px;
+    }
+}
+   
+// 聊天窗口大小样式
+.chatWindow{
+    width:100%;
+    position:relative;
+    //padding-bottom:62%;    /*需要用padding来维持16:9比例,也就是9除以16*/
+    height: 50%;
+    & video{
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%
+    }
+}
+// .chatWindow-text{
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+//     padding: 0 20px;
+//     background: #616C8F;
+//     opacity: 0.57;
+//     color: #fff;
+//     height: 32px;
+//     position: absolute;
+//     bottom: 0;
+//     width: 100%;
+//     & .elImg{
+//         width: 18px;
+//         height:18px;
+//         &:hover{
+//             cursor: pointer;
+//         }
+//     }
+// }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 52px;
+    background: #F7F7F9;
+    color: #fff; 
+    padding: 0px 25px;
+    border-bottom: 0.5px solid #EBEBF4;
+}
+.person-text{
+    // width: 75px;
+    // height: 12px;
+    // font-size: 12px;
+    // font-family: PingFangSC-Regular, PingFang SC;
+    // font-weight: 400;
+    // color: #FFFFFF;
+    // line-height: 12px;
+}
+#desktop{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    object-fit: cover;
+}
+.shared_desktop_container{
+    width:100%;
+    height:100%;
+    background:#C6CAD7;
+    opacity:75%;
+    & .shared_desktop_item{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -40%);
+        font-size: 16px;
+        font-family: PingFangSC-Medium, "PingFang SC";
+        color: #636B90;
+    }
+}
+main{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+
+    & .handle-whiteboard{
+        height: 100%;
+    }
+    & .tools_style{
+        position: absolute;
+        right: 0;
+        bottom: 9%;
+        display: flex;
+        align-items: center;
+    }
+    // 右侧浮层图标
+    & .floating{
+        position: absolute;
+        right: 100px; /*100px为自定义工具的宽高*/
+        bottom: 120px;
+        & .van-image:hover{
+            cursor: pointer;
+        }
+    }
+    // 老师默认占位图片显示样式
+    & .placeholderImg-tea{
+        border:1px solid #00BFBF;
+        background:#D7D7D7;  
+        width:100%;
+        height: 100%;
+        position: relative;
+        & .placeholderImg-tea-img{
+            width:118px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+     // 学生默认占位图片显示样式
+     & .placeholderImg-stu{
+        border:1px solid #00BFBF;
+        background:#D7D7D7;  
+        width:100%;
+        height: 100%;
+        position: relative;
+        & .placeholderImg-stu-img{
+            width:118px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -80%);
+        }
+    }
+    & .windowTeacher{
+        width: 100%;
+        position: relative;
+        height: 100%;
+        &:hover{
+            cursor: pointer;
+            .dragIcon{
+                display: block;
+            }
+        }
+        & video{
+            height: 100%
+        }
+        & .dragIcon{
+            display: none;
+            position: absolute;
+            right: 5px;
+            top: 5px;
+            & :hover{
+                cursor: pointer;
+            }
+        }
+        & .window-bottom-text{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            background: #616C8F;
+            opacity: 0.57;
+            color: #fff;
+            height: 34px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            & .person-icon{
+                display: flex;
+                align-items: center;
+                justify-content:center;
+            }
+            & .elImg:nth-child(1){
+                width: 13px;
+                height:18px;
+                margin-right: 12px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            & .elImg:nth-child(2){
+                width: 15px;
+                height:18px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    & .windowStudents{
+        width: 100%;
+        position: relative;
+        height: 100%;
+        & video{
+            height: 100%
+        }
+        & .window-bottom-text-stu{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            background: #616C8F;
+            opacity: 0.57;
+            color: #fff;
+            height: 34px;
+            position: absolute;
+            bottom: 51px;
+            width: 100%;
+            & .person-icon{
+                display: flex;
+                align-items: center;
+                justify-content:center;
+            }
+            & .elImg:nth-child(1){
+                width: 13px;
+                height:18px;
+                margin-right: 10px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            & .elImg:nth-child(2){
+                width: 15px;
+                height:18px;
+                &:hover{
+                    cursor: pointer;
+                }
+            }
+            
+        }
+    }
+    & .text{
+        color:#333;
+        position: absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        font-size: 14px;
+    }
+}
+.talker-list-placeholder{
+    position: fixed;
+    width: 0;
+    bottom: 70px;
+    right: 10px;
+    z-index: 3;
+    height: calc(100% - 130px);// 去掉header 和footer
+    & .talker-list-wrapper{
+        width: 336px;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        border-radius: 10px;
+        position: absolute;
+        right: 0;
+        transition: 0.5s;
+        // 伸缩按钮
+        & .control-btn{
+            width: 22px;
+            height: 96px;
+            background: rgba(0, 0, 0, 0.8);
+            border-radius: 8px 0px 0px 8px;
+            position: absolute;
+            left: -22px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 5;
+            cursor: pointer;
+            // display: flex;
+            display: none;//暂定可伸缩图标为隐藏状态
+            justify-content: center;
+            align-items: center;
+        }
+       
+        // 列表内容区
+        & .content{
+            height: calc(100%);
+            overflow: auto;
+        }
+       
+    }
+}
+
+// 视频在白板区内的样式
+.whiteVideoStyle{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    & .white-dragIcon{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+        & :hover{
+            cursor: pointer;
+        }
+    }
+}
+.whiteboard{
+    width: 100%;
+    height: 100%;
+    // background: #ddd;
+    & .iframeContent{
+        width: 100%;
+        height: calc(100% - 40px);
+        position: relative;
+        >iframe{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+    }
+}
+

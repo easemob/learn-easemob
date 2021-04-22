@@ -1,0 +1,288 @@
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="#f0f2f5">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".ui.LoginActivity">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="0.2"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="1dp"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_weight="0.3"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@mipmap/ic_logo" />
+            <View
+                android:layout_width="1dp"
+                android:background="@color/colorPrimaryLight"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="10dp"
+                android:layout_height="36dp"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="0.4"
+                android:layout_height="wrap_content"
+                android:textColor="@color/colorPrimaryLight"
+                android:textSize="22sp"
+                android:text="@string/title_name"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_weight="0.2"
+                android:layout_height="1dp"/>
+            <!-- <TextView
+                     android:layout_width="200dp"
+                     android:layout_height="20dp"
+                     android:layout_gravity="center"
+                     android:gravity="center"
+                     android:text="环信多人会议"/>-->
+            <!--手机号码-->
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="0.02"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            style="@style/TextViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TvLoginTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:text="@string/roomName"/>
+
+            <EditText
+                android:id="@+id/roomName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/common_gray_deep"
+                android:textColorHint="#a3a3a3"
+                style="@style/EditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:text=""
+                >
+            </EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="0.02"
+            android:layout_height="0dp"/>
+        <!--登录密码-->
+        <LinearLayout
+            style="@style/TextViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TvLoginTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="2dp"
+                android:text="@string/roomPassword"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical">
+                <EditText
+                    android:id="@+id/roomPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/common_gray_deep"
+                    android:textColorHint="#a3a3a3"
+                    android:hint="@string/roomPassword"
+                    style="@style/EditText"
+                    android:inputType="textPassword"
+                    android:maxLines="1"
+                    android:text=""
+                    >
+                </EditText>
+                <!--查看密码-->
+                <ImageView
+                    android:id="@+id/viewPwd"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="right"
+                    android:layout_marginLeft="300dp"
+                    android:layout_centerVertical="true"
+                    android:clickable="true"
+                    android:src="@mipmap/ic_eyes" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="0.02"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            style="@style/TextViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TvLoginTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="2dp"
+                android:text="@string/roomType"/>
+
+            <Spinner
+                android:id="@+id/confrTypeSpinner"
+                style="@style/EditText"
+                android:layout_width="match_parent"
+                android:layout_height="38dp"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="0.02"
+            android:layout_height="0dp"/>
+        <LinearLayout
+            style="@style/TextViewBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="40dp"
+            android:paddingRight="40dp"
+            android:gravity="left"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/TvLoginTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingTop="2dp"
+                android:text="@string/user_name"/>
+
+            <EditText
+                android:id="@+id/nickName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textColor="@color/common_gray_deep"
+                android:textColorHint="#a3a3a3"
+                style="@style/EditText"
+                android:inputType="text"
+                android:maxLines="1"
+                android:text=""
+                >
+            </EditText>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="0.02"
+            android:layout_height="0dp"/>
+        <RadioGroup
+            android:id="@+id/roleGroup"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            >
+            <RadioButton
+                android:id="@+id/teacherRadio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:buttonTint="@color/colorMain"
+                android:checked="true"
+                android:textColor="@drawable/login_radiobutton"
+                android:layout_marginRight="30dp"
+                android:text="老师"/>
+            <RadioButton
+                android:id="@+id/studentRadio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:buttonTint="@color/colorMain"
+                android:textColor="@drawable/login_radiobutton"
+                android:text="学生"/>
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.1" />
+        <!-- 登录按钮-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginBottom="5dp">
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/login_main_solid"
+                android:text="登 录"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="0.05"
+            android:layout_height="0dp"/>
+
+        <TextView
+            style="@style/TvLoginVersion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp"
+            android:paddingTop="2dp"
+            android:text="@string/version_company"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_weight="0.3"
+            android:layout_height="0dp"/>
+    </LinearLayout>
+</ScrollView>

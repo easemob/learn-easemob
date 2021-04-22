@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:orientation="vertical"
+        >
+        <com.t.emlearn.ui.view.TopMainView
+                android:id="@+id/topView"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/lay_white"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toStartOf="@+id/lay_memberview"
+            >
+            <com.t.emlearn.ui.view.WhiteBoardView
+                android:id="@+id/whiteboard"
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+
+                android:background="@android:color/white"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:layout_width="200dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginBottom="50dp"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:id="@+id/chat_zone">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/v_title_chat"
+                        android:layout_width="0dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_weight="0.5"
+                        android:background="@color/colorChatTitleBg"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:id="@+id/tv_title_chat"
+                            android:layout_width="wrap_content"
+                            android:layout_height="39dp"
+                            android:gravity="center_vertical"
+                            android:layout_centerInParent="true"
+                            android:text="@string/chat_zone"
+                            android:textColor="@color/black1"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@color/colorChatTitleBg"
+                        android:gravity="center_vertical"
+                        android:padding="5dp">
+
+                        <ImageView
+                            android:id="@+id/chat_zone_close"
+                            android:layout_width="10dp"
+                            android:layout_height="10dp"
+                            android:layout_centerInParent="true"
+                            android:src="@mipmap/ic_close2" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <com.t.emlearn.ui.view.chat.ChatView
+                    android:id="@+id/chat_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/light_gray_2">
+
+                </com.t.emlearn.ui.view.chat.ChatView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:padding="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/chat_but"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_chat_big"
+                    ></ImageView>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:id="@+id/lay_memberview"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5">
+
+                <com.t.emlearn.ui.view.MemberView
+                    android:id="@+id/upMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@color/btn_gray_normal"
+                    android:scrollbars="none">
+
+                </com.t.emlearn.ui.view.MemberView>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:layout_weight="0.5">
+
+                <com.t.emlearn.ui.view.MemberView
+                    android:id="@+id/downMember"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="bottom"
+                    android:background="@color/btn_gray_normal"
+                    android:scrollbars="none"></com.t.emlearn.ui.view.MemberView>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

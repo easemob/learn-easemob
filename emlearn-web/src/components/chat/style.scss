@@ -1,0 +1,81 @@
+// van-overlay
+.custom-overlay{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: auto;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+}
+//聊天窗口样式 
+.chat-window-style{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position: absolute;
+    & .chat-container{
+        width: 18rem;
+        z-index: 1;
+        background: rgb(255, 255, 255);
+        & .chat-container-header{
+            padding: 0 15px;
+            height: 36px;
+            font-size: 0.85rem;
+            color:#72788D;
+            background:#C6CAD6;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            & .chat-container-header-title{
+                width: 89px;
+                height: 12px;
+                font-size: 12px;
+                font-family: PingFang-SC-Medium, PingFang-SC;
+                font-weight: 500;
+                color: #616C8F;
+                line-height: 12px;
+            }
+            & .chat-container-header-icon{
+                width:10px;
+                height:10px;
+            }            
+            & .close-icon:hover{
+                cursor: pointer;
+            }
+        }
+        & .chat-container-panel{
+            border-bottom:1px solid #D7D7D7;
+            background: #F7F7F9;
+            & .chat-container-panel-info{
+                padding:0 10px;
+                height: 310px;
+            }
+        }
+        & .chat-container-send{
+            margin:5px 0;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            & .chat-container-send-icon{
+                padding-left:10px;
+                padding-right:10px;
+                display:flex;
+                & .chat-custor-pointer:hover{
+                    cursor: pointer;
+                }
+            }
+            & .chat-container-send-input{
+                border-radius:20px;
+                padding:3px;
+                padding-left: 10px;
+                background: #F7F7F9;
+            }
+            & .chat-container-send-button{
+                margin-left:-30px;
+                height:30px;
+            }
+        }
+    }
+}
