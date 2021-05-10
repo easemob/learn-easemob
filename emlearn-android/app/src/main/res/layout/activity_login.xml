@@ -279,6 +279,7 @@
             android:layout_height="wrap_content"
             android:paddingBottom="5dp"
             android:paddingTop="2dp"
+            android:visibility="gone"
             android:text="@string/version_company"/>
         <View
             android:layout_width="match_parent"
