@@ -4,20 +4,20 @@
 
 ## 核心界面展示：
 ### 1对1互动教学主界面
+移动端
 [![主界面](https://www.imgeek.org/uploads/article/20210511/fe558e84b9037a010ede0ecb0833fa43.jpg "主界面")](https://www.imgeek.org/uploads/article/20210511/fe558e84b9037a010ede0ecb0833fa43.jpg "主界面")
-<center></center移动端>移动端
 
+Web端
 ![](https://www.imgeek.org/uploads/article/20210511/453682f9d626a33ffb3d38918a892d93.png)
-<center>Web端</center>
+
 
 ### 在线互动小班课主界面
-
+移动端
 ![](https://www.imgeek.org/uploads/article/20210511/077c841b03079377f3a1a7efd1575e43.jpg)
 
-<center>移动端</center>
-[![](https://www.imgeek.org/uploads/article/20210511/725ef984087a730c1e19220b3b6e0798.png)](https://www.imgeek.org/uploads/article/20210511/725ef984087a730c1e19220b3b6e0798.png)
-
 教师web端
+![](https://www.imgeek.org/uploads/article/20210511/725ef984087a730c1e19220b3b6e0798.png)
+
 
 ## 核心功能
 - 1对1互动教学
